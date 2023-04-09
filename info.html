@@ -5,23 +5,51 @@
 	<style>
 		body {
 			background-color: #FFFFFF;
-			font-family: Arial, sans-serif;
+			font-family: Dejavu Sans Mono, sans-serif;
 			text-align: center;
-			margin: 0;
+			vertical-align: middle;
+			margin: 0 auto;
 			padding: 0;
 		}
+		
 		.title {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			height: 150px;
-			background-color: #FFFFFF;
+		    display: flex;
+		    align-items: left;
+		    justify-content: left;
+		    height: 150px;
+		    background-color: #FFFFFF;
+		    color: #1C1C1C;
+		    font-family: Dejavu Mono, sans-serif;
+		    font-size: 36px;
+		    letter-spacing: 2px;
+		    padding: 0 20px;
+		    position: relative;
+		}
+		.title:before,
+		.title:after {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 20px;
+			font-weight: normal;
 			color: #1C1C1C;
-			font-size: 36px;
-			font-weight: bold;
-			letter-spacing: 2px;
-			text-transform: uppercase;
-			padding: 0 20px;
+		}
+		.title:before {
+			left: 0;
+			width: calc(50% - 80px);
+			text-align: right;
+		}
+		.title:after {
+			right: 0;
+			width: calc(50% - 80px);
+			text-align: left;
+		}
+		.title span {
+			position: relative;
+			z-index: 1;
+			background-color: #FFFFFF;
+			padding: 0 30px;
+			line-height: 1.5;
 		}
 		.title a {
 			color: #1C1C1C;
@@ -33,53 +61,56 @@
 		.title a:hover {
 			text-decoration: underline;
 		}
-		.title span {
-			background-color: #FFFFFF;
-			padding: 0 30px;
-			line-height: 1.5;
-		}
-		.title:before,
-		.title:after {
-			content: "";
-			flex: 1;
-			height: 1px;
-			background-color: #1C1C1C;
-			margin: 0 20px;
+		
+		.title-info {
+		    display: flex;
+		    align-items: left;
+		    justify-content: left;
+		    position: absolute;
+		    top: 0;
+		    /*right: 20px;*/
+		    background-color: #FFFFFF;
+		    padding: 10px 20px;
+		    font-size: 16px;
+		    font-weight: normal;
+		    /*border: 1px solid #1C1C1C;
+		    border-radius: 5px;*/
 		}
 		
-		.container {
-			width: 900px;
-			margin: 0 auto;
-			text-align: center;
-			margin-top: 50px;
-		}
 		
 		.description {
+			background-color: #FFFFFF;
+			font-family: Dejavu Sans Mono, sans-serif;
 			font-size: 18px;
-			font-weight: bold;
-			margin: 20px 0;
-			text-align: left;
-			padding: 0 20px;
+			font-weight: normal;
+		        align-items: center;
+		        display: flex;
+		        justify-content: center;
+		        position: absolute;
+		        text-align: center;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			margin-right: 150px;
+			margin-left: 80px;
 		}
 	</style>
 </head>
 <body>
 	<div class="title">
-		<span>Stuttgarter Kataster</span>
-		<a href="index.html">Back to Index</a>
+	<div class="title-info">
+		<a href="index.html">back to index</a>
+	</div>
 	</div>
 	
-	<div class="container">
-		<div class="description">
-			<p> das „stuttgarter kataster“ erfasst informationen rund um räumliche phänomene der stadt stuttgart. raum und architektur kann aus vielerlei richtungen und unter vielen aspekten betrachtet und erlebt werden. selten jedoch werden fragen nach dem atmosphärischen gehalt eines gebäudes oder ortes gestellt. wie erleben raumnutzer: innen ihr unmittelbares umfeld, welchen «charakter», welche besonderen eigenschaften hat ein gebäude oder ein ort? was ist atmosphäre, mit welchen architektonischen mitteln kann sie erzeugt werden? 
-unsere zeit zwingt uns dazu die aktuelle raumpolitik, -bildung und -praxis kritisch zu hinterfragen und uns auf die suche nach neuen methoden der raumgestaltung und -kommunikation zu begeben. alle fragmente und fundstücke wurden 2023 in regelmäßigen abständen gesammelt und dokumentiert. auf spielerische weise bietet das „stuttgarter kataster“ die möglichkeit mehr über die stadt stuttgart, im besonderen über den raum des sanierungsprojektes bismarck 28 im stuttgarter rotebühl zu erfahren. die einzelnen fragmente und fundstücke stehen als objekt-datei der breiten öffentlichkeit zur verfügung und sollen anstoß dazu bieten diese als gestalterische mittel einzusetzen. 
 
-entstanden im rahmen der masterarbeit: „umgang stadt/raum – räumliche interdependenzen“
-von ben stolz
-staatliche akademie der bildenden künste stuttgart </p>
-		</div>
+	<div class="description">
+			<p> das „stuttgarter kataster“ erfasst informationen rund um räumliche phänomene der stadt stuttgart. raum und architektur kann aus vielerlei richtungen und unter vielen aspekten betrachtet und erlebt werden. selten jedoch werden fragen nach dem atmosphärischen gehalt eines gebäudes oder ortes gestellt. wie erleben raumnutzer: innen ihr unmittelbares umfeld, welchen «charakter», welche besonderen eigenschaften hat ein gebäude oder ein ort? was ist atmosphäre, mit welchen architektonischen mitteln kann sie erzeugt werden? <br> <br>
+unsere zeit zwingt uns dazu die aktuelle raumpolitik, -bildung und -praxis kritisch zu hinterfragen und uns auf die suche nach neuen methoden der raumgestaltung und -kommunikation zu begeben. alle fragmente und fundstücke wurden 2023 in regelmäßigen abständen gesammelt und dokumentiert. auf spielerische weise bietet das „stuttgarter kataster“ die möglichkeit mehr über die stadt stuttgart, im besonderen über den raum des sanierungsprojektes bismarck 28 im stuttgarter rotebühl zu erfahren. die einzelnen fragmente und fundstücke stehen als objekt-datei der breiten öffentlichkeit zur verfügung und sollen anstoß dazu bieten diese als gestalterische mittel einzusetzen. <br> <br> <br>
+
+entstanden im rahmen der masterarbeit: „umgang stadt/raum – räumliche interdependenzen“ <br> <br>
+von ben stolz<br> 
+staatliche akademie der bildenden künste stuttgart</p>
 	</div>
 
 </body>
 </html>
-
