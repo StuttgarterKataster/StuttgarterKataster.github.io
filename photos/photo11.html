@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Photo 1</title>
+	<title>Photo 11</title>
 	<style>
 		body {
 			background-color: #FFFFFF;
-			font-family: Arial, sans-serif;
+			font-family: Dejavu Sans Mono, sans-serif;
 			text-align: center;
 			margin: 0;
 			padding: 0;
@@ -58,6 +58,7 @@
 			font-size: 16px;
 			cursor: pointer;
 			text-decoration: none;
+			background-color: #FFFFFF;
 		}
 		.toggle-button:hover {
 			color: #000000;
@@ -79,6 +80,7 @@
 		}
 		body.dark .toggle-button {
 			color: #FFFFFF;
+			background-color: #000000;
 		}
 		body.dark .toggle-button:hover {
 			color: #FFFFFF;
@@ -94,7 +96,7 @@
 	
 	<! -- HIER KANNST DU AENDERN  -->
 	<div class="description">
-		<p>ORT /// FUNKTION /// ZEIT</p> <! --schreib deine Beschreibung hier  -->
+		<p> <! --schreib deine Beschreibung hier  --> </p> 
 	</div>
 	<! -- BIS HIER   -->
 	
@@ -106,7 +108,7 @@
 			
 			if (body.classList.contains("dark")) {
 				body.classList.remove("dark");
-				toggleButton.innerText = "Schwarz";
+				toggleButton.innerText = "schwarz";
 			} else {
 				body.classList.add("dark");
 				toggleButton.innerText = "Weiß";
