@@ -1,16 +1,16 @@
 #!/bin/bash
 
-for i in {2..16} # HIER KANNST DU AENDERN
+for i in {2..298} # HIER KANNST DU AENDERN
 do
   # create HTML file with filename "photo<i>.html"
   echo '<!DOCTYPE html>
 <html>
 <head>
-	<title>Photo 1</title>
+	<title>Photo '"$i"'</title>
 	<style>
 		body {
 			background-color: #FFFFFF;
-			font-family: Arial, sans-serif;
+			font-family: Dejavu Sans Mono, sans-serif;
 			text-align: center;
 			margin: 0;
 			padding: 0;
@@ -63,6 +63,7 @@ do
 			font-size: 16px;
 			cursor: pointer;
 			text-decoration: none;
+			background-color: #FFFFFF;
 		}
 		.toggle-button:hover {
 			color: #000000;
@@ -84,6 +85,7 @@ do
 		}
 		body.dark .toggle-button {
 			color: #FFFFFF;
+			background-color: #000000;
 		}
 		body.dark .toggle-button:hover {
 			color: #FFFFFF;
@@ -99,7 +101,7 @@ do
 	
 	<! -- HIER KANNST DU AENDERN  -->
 	<div class="description">
-		<p>ORT /// FUNKTION /// ZEIT</p> <! --schreib deine Beschreibung hier  -->
+		<p> <! --schreib deine Beschreibung hier  --> </p> 
 	</div>
 	<! -- BIS HIER   -->
 	
@@ -111,7 +113,7 @@ do
 			
 			if (body.classList.contains("dark")) {
 				body.classList.remove("dark");
-				toggleButton.innerText = "Schwarz";
+				toggleButton.innerText = "schwarz";
 			} else {
 				body.classList.add("dark");
 				toggleButton.innerText = "Weiß";
@@ -123,4 +125,3 @@ do
 ' > photo"$i".html
 
 done
-
