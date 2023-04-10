@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {2..298} # HIER KANNST DU AENDERN
+for i in {1..298} # HIER KANNST DU AENDERN
 do
   # create HTML file with filename "photo<i>.html"
   echo '<!DOCTYPE html>
@@ -93,9 +93,9 @@ do
 	</style>
 </head>
 <body>
-	<button class="toggle-button" onclick="toggleBackground()">Schwarz</button>
+	<button class="toggle-button" onclick="toggleBackground()">schwarz</button>
 	
-	<a href="../index.html" class="back-button"><span class="back-arrow">&lt;</span>BACK</a>
+	<a href="../index.html" class="back-button"><span class="back-arrow">&lt;</span>back</a>
 	
 	<img src="files/photo'"$i"'.png" alt="Photo '"$i"'" class="photo">
 	
@@ -116,7 +116,7 @@ do
 				toggleButton.innerText = "schwarz";
 			} else {
 				body.classList.add("dark");
-				toggleButton.innerText = "Weiß";
+				toggleButton.innerText = "weiß";
 			}
 		}
 	</script>
@@ -125,3 +125,4 @@ do
 ' > photo"$i".html
 
 done
+
